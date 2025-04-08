@@ -1,0 +1,66 @@
+import type { Project } from "@/lib/types"
+
+export const projects: Project[] = [
+  {
+    id: 1,
+    title: "Distributed Microservices",
+    description: "Distributed Microservices system integrated with LLM",
+    image: "/placeholder.svg?height=200&width=350",
+    duration: "4 months",
+    techStack: [
+      "GoLang",
+      "Kubernetes",
+      "AWS",
+      "Postgres",
+      "Kafka",
+      "EKS",
+      "CI/CD",
+      "Terraform",
+      "Helm",
+      "Jenkins",
+      "LLM",
+    ],
+    details: [
+      "Built a robust data streaming pipeline with Kafka which streams over 240000+ records of CVE data to PostgreSQL, which is utilized as part of the RAG to power a self-hosted LLM that can answer queries specific to the CVE data",
+      "Architected highly-available distributed microservices with Go to download, process, stream and consume over 2GB of CVE JSON data while accounting for scalability, reliability and security",
+      "Deployed the whole architecture on EKS in AWS with k8s operator, Service Mesh, logging and monitoring solutions",
+      "Utilized Jenkins as a CI/CD tool to automate the development and build process. Used Terraform to develop and maintain the infrastructure through code and Helm to manage the Kubernetes packages",
+    ],
+  },
+  {
+    id: 2,
+    title: "User Account Management",
+    description: "A cloud native API, which manages, user creation and verification.",
+    image: "/placeholder.svg?height=200&width=350",
+    duration: "2 months",
+    techStack: ["Node.js", "Google Cloud", "Terraform", "CI/CD", "Packer", "IaaS"],
+    details: [
+      "Designed and deployed a high-performance Node.js REST API on Google Cloud, utilizing IaaS offerings including VPC, DNS, Cloud SQL, Logging, Pub/Sub, and Serverless functions",
+      "Embraced DevOps methodologies through Infrastructure as Code (IaC) with Terraform and CI/CD pipelines using GitHub Actions, including automated image creation with Packer, accelerating deployment cycles",
+    ],
+  },
+  {
+    id: 3,
+    title: "Discussions Forum",
+    description: "A responsive full stack application where users can create and discuss various topics.",
+    image: "/placeholder.svg?height=200&width=350",
+    duration: "1 month",
+    techStack: ["React.js", "Node.js", "Express.js", "MongoDB"],
+    details: ["Implemented a REST API to handle authentication, client-side interactions and database interactions"],
+  },
+  {
+    id: 4,
+    title: "Weather Dashboard",
+    description: "Real-time weather information with forecasts and historical data analysis.",
+    image: "/placeholder.svg?height=200&width=350",
+    duration: "1 month",
+    techStack: ["JavaScript", "Chart.js", "Weather API", "HTML/CSS"],
+    details: [
+      "Integrated with multiple weather APIs for comprehensive data",
+      "Implemented interactive charts for data visualization",
+      "Added location-based weather detection",
+      "Created responsive design for all device sizes",
+      "Implemented dark/light mode toggle",
+    ],
+  },
+]
